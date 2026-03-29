@@ -1,0 +1,9 @@
+FROM ubuntu:24.04
+RUN sudo apt update
+RUN wget https://templatemo.com/tm-zip-files-2020/templatemo_610_aurum_gold.zip
+RUN sudo apt install nginx -y
+RUN sudo apt install unzip -y
+RUN sudo unzip templatemo_610_aurum_gold.zip
+RUN sudo mv templatemo_610_aurum_gold /var/www/html
+EXPOSE 80
+
