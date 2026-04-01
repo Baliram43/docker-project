@@ -1,0 +1,3 @@
+FROM nginx:alpine
+ADD templatemo_610_aurum_gold /usr/share/nginx/html
+EXPOSE 80
